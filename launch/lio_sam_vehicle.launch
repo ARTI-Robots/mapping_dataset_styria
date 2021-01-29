@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- Parameters -->
+    <rosparam file="$(find mapping_dataset_styria)/config/lio_sam/vehicle_ouster_params.yaml" command="load" />
+
+    <!--- LOAM -->
+    <include file="$(find lio_sam)/launch/include/module_loam.launch" />
+
+    <!--- Run Navsat 
+    <include file="$(find lio_sam)/launch/include/module_navsat.launch" />-->
+
+    <!--- Run Rviz-->
+    <include file="$(find lio_sam)/launch/include/module_rviz.launch" />
+
+</launch>

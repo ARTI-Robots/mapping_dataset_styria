@@ -1,0 +1,10 @@
+name: lidar_middle_right     # name which is used in the node name
+type: laser                  # type specifier currently unused
+sensor_hostname: 192.168.1.72   # hostname or IP in dotted decimal form of the sensor
+udp_dest: 192.168.1.100      # port to which the sensor should send lidar data
+lidar_port: 7506             # port to which the sensor should send lidar data
+imu_port: 7507               # port to which the sensor should send imu data
+lidar_mode: 1024x10          # resolution and rate: either 512x10, 512x20, 1024x10, 1024x20, or 2048x10
+timestamp_mode: TIME_FROM_PTP_1588              # method used to timestamp measurements: TIME_FROM_INTERNAL_OSC, TIME_FROM_SYNC_PULSE_IN, TIME_FROM_PTP_1588
+image: false                  # publish range/intensity/noise image topic
+

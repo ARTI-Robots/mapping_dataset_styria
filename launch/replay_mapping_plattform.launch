@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="rviz_displayed" default="true"/>
+
+    <!-- Set ROS time to replay -->
+    <param name="/use_sim_time" value="true" />
+
+
+    <!-- Start the Laser scanners -->
+    <include file="$(find mapping_dataset_styria)/launch/ouster_config_file.launch" >
+        <arg name="sensor_name" value="lidar" />
+        <arg name="replay" value="true"/>
+        <arg name="metadata" value="$(find mapping_dataset_styria)/config/laser/mapping_plattform/lidar.json"/>
+        <arg name="config" value="$(find mapping_dataset_styria)/config/laser/mapping_plattform/lidar.yaml" />
+    </include>
+
+       
+    <!-- Start RVIZ for vehicle visualization -->
+    <arg name="rviz_config_file" default="$(find mapping_dataset_styria)/config/mapping_plattform.rviz"/>
+    <node if="$(eval rviz_displayed == true)" pkg="rviz" type="rviz" name="rviz_vehicle" respawn="true" output="screen" args="-d $(arg rviz_config_file)"/>
+
+
+</launch>

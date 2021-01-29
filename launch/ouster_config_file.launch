@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="sensor_name" default="lidar_top" doc="Name of the sensor which is used in the node name"/>
+  <arg name="config" default="$(find ouster_ros)/config/lidar_top.yaml" doc="Configuration file to use. If none specified, it is not working properly!"/>
+  <arg name="image" default="true" doc="publish range/intensity/noise image topic"/>
+  <arg name="metadata" default="" doc="override default metadata file for replays"/>
+  <arg name="replay" default="false" doc="do not connect to a sensor; expect /os_node/{lidar,imu}_packets from replay"/>
+  <arg name="tf_prefix" default="$(arg sensor_name)" doc="namespace for tf transforms"/>
+
+  <node pkg="ouster_ros" name="$(arg sensor_name)" type="os_node" output="screen" required="true">
+      <rosparam command="load" file="$(arg config)" />
+      <param name="~/replay" value="$(arg replay)"/>
+      <param name="~/metadata" value="$(arg metadata)"/>
+  </node>
+
+  <node pkg="ouster_ros" name="$(arg sensor_name)_cloud_node" type="os_cloud_node" output="screen" required="true">
+      <remap from="~/os_config" to="/$(arg sensor_name)/os_config"/>
+      <remap from="~/lidar_packets" to="/$(arg sensor_name)/lidar_packets"/>
+      <remap from="~/imu_packets" to="/$(arg sensor_name)/imu_packets"/>
+      <remap from="~/points" to="/$(arg sensor_name)/points"/>
+      <remap from="~/imu" to="/$(arg sensor_name)/imu"/>
+      <param name="~/tf_prefix" value="$(arg tf_prefix)"/>
+      <param name="~/replay" value="$(arg replay)"/>
+      <param name="~/metadata" value="$(arg metadata)"/>
+      <rosparam command="load" file="$(arg config)" />
+  </node>
+
+
+  <node if="$(arg image)" pkg="ouster_ros" name="$(arg sensor_name)_img_node" type="img_node" output="screen" required="true">
+      <remap from="~/os_config" to="/$(arg sensor_name)/os_config"/>
+      <remap from="~/points" to="/$(arg sensor_name)/points"/>
+  </node>
+
+</launch>

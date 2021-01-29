@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="rviz_displayed" default="true"/>
+
+    <!-- Set ROS time to replay -->
+    <param name="/use_sim_time" value="true" />
+
+
+    <!-- Start the Laser scanners -->
+    <include file="$(find mapping_dataset_styria)/launch/ouster_config_file.launch" >
+        <arg name="sensor_name" value="lidar_top" />
+        <arg name="image" value="true" />
+        <arg name="replay" value="true"/>
+        <arg name="metadata" value="$(find mapping_dataset_styria)/config/laser/vehicle/lidar_top.json"/>
+        <arg name="config" value="$(find mapping_dataset_styria)/config/laser/vehicle/lidar_top.yaml" />
+    </include>
+
+    <include file="$(find mapping_dataset_styria)/launch/ouster_config_file.launch" >
+        <arg name="sensor_name" value="lidar_front" />
+        <arg name="image" value="false" doc="publish range/intensity/noise image topic"/>
+        <arg name="replay" value="true"/>
+        <arg name="metadata" value="$(find mapping_dataset_styria)/config/laser/vehicle/lidar_front.json"/>
+        <arg name="config" value="$(find mapping_dataset_styria)/config/laser/vehicle/lidar_front.yaml" />
+    </include>
+
+    <include file="$(find mapping_dataset_styria)/launch/ouster_config_file.launch" >
+        <arg name="sensor_name" value="lidar_middle_left" />
+        <arg name="image" value="false" doc="publish range/intensity/noise image topic"/>
+        <arg name="replay" value="true"/>
+        <arg name="metadata" value="$(find mapping_dataset_styria)/config/laser/vehicle/lidar_middle_left.json"/>
+        <arg name="config" value="$(find mapping_dataset_styria)/config/laser/vehicle/lidar_middle_left.yaml" />
+    </include>
+
+    <include file="$(find mapping_dataset_styria)/launch/ouster_config_file.launch" >
+        <arg name="sensor_name" value="lidar_middle_right" />
+        <arg name="image" value="false" doc="publish range/intensity/noise image topic"/>
+        <arg name="replay" value="true"/>
+        <arg name="metadata" value="$(find mapping_dataset_styria)/config/laser/vehicle/lidar_middle_right.json"/>
+        <arg name="config" value="$(find mapping_dataset_styria)/config/laser/vehicle/lidar_middle_right.yaml" />
+    </include>
+       
+
+    <!-- Start RVIZ for vehicle visualization -->
+    <arg name="rviz_config_file" default="$(find mapping_dataset_styria)/config/vehicle.rviz"/>
+    <node if="$(eval rviz_displayed == true)" pkg="rviz" type="rviz" name="rviz_vehicle" respawn="true" output="screen" args="-d $(arg rviz_config_file)"/>
+
+
+</launch>

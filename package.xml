@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>mapping_dataset_styria</name>
+  <version>0.0.0</version>
+  <description>The mapping_dataset_styria package</description>
+
+  <maintainer email="markus.schratter@v2c2.at">Markus Schratter</maintainer>
+  <maintainer email="k.ml@arti-robots.com">Konstantin Mautner-Lassnig</maintainer>
+
+  <license>Apache</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>
+
