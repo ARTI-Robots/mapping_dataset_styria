@@ -84,8 +84,8 @@ rosbag play ROSBAG.bag --clock
 
 ## Powered by
 
-[ARTI](http://arti-robots.com)
+[ARTI - Autonomous Robot Technology GmbH](http://arti-robots.com)
 
-[Virtual Vehicle](https://www.v2c2.at/)
+[Virtual Vehicle Research GmbH](https://www.v2c2.at/)
 
 
