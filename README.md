@@ -22,6 +22,7 @@ Graz Inner City (walking):
 https://artirobots.sharepoint.com/:u:/g/EW7NEasfPFNNqX6kgPSrSJ4B8ifLob0q7ta24_YgT0TgIA?e=ZVh2ry
 
 Planned route: 
+
 ![Planned Route Inner City](https://github.com/ARTI-Robots/mapping_dataset_styria/blob/main/docs/gpx_design_inner_city.jpg?raw=true "Planned Route Inner City")
 
 Graz Schlossberg (walking):
@@ -31,6 +32,10 @@ https://artirobots.sharepoint.com/:u:/g/EcF9BHIY421Kqhf3DT4BxrkBhQt_U97iKyOeN4o3
 Graz Stadtpark (walking):
 
 Cooming soon!
+
+Planned route: 
+
+![Planned Route Stadtpark](https://github.com/ARTI-Robots/mapping_dataset_styria/blob/main/docs/gpx_design_park.jpg?raw=true "Planned Route Stadtpark")
 
 Vehicle Recordings
 
