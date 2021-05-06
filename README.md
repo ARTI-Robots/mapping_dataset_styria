@@ -13,13 +13,16 @@ Tested on Ubuntu 18.04, ROS Melodic
 Bagfiles are available for download: 
 
 Graz Inner City:
+
 https://artirobots.sharepoint.com/:u:/g/EW7NEasfPFNNqX6kgPSrSJ4B8ifLob0q7ta24_YgT0TgIA?e=ZVh2ry
 
 Graz Schlossberg:
+
 https://artirobots.sharepoint.com/:u:/g/EcF9BHIY421Kqhf3DT4BxrkBhQt_U97iKyOeN4o3fx0hYA?e=E0iIqG
 
 Cooming soon:
 - Graz Stadtpark
+- Vehicle Recordings
 
 
 ## Installation
@@ -34,19 +37,28 @@ catkin build
 
 
 
-## Run the package
+## Run the package with mapping plattform (walking)
 
 ```
 roscore
 ```
 
+```
+roslaunch mapping_dataset_styria replay_mapping_plattform.launch
+```
+
+```
+rosbag play ROSBAG.bag --clock
+```
+
+## Run the package with vehicle plattform (driving)
+
+```
+roscore
+```
 
 ```
 roslaunch mapping_dataset_styria replay_vehicle.launch 
-```
-
-```
-roslaunch mapping_dataset_styria replay_mapping_plattform.launch
 ```
 
 ```
