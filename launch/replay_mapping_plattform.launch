@@ -15,6 +15,10 @@
         <arg name="config" value="$(find mapping_dataset_styria)/config/laser/mapping_plattform/lidar.yaml" />
     </include>
 
+    <node name="tf_publisher_mount_base_link" pkg="tf" type="static_transform_publisher" args="-0.3 0.0 0.5 0.0 0.0 0.0 base_link mount 10"/>
+    <node name="tf_publisher_mount_ouster" pkg="tf" type="static_transform_publisher" args="0.0 0.0 0.0 0.0 0.0 0.0 mount lidar/os_sensor 10"/>
+    <node name="tf_publisher_imu_ouster" pkg="tf" type="static_transform_publisher" args="0.0 0.0 -0.1 0.0 0.0 0.0 mount imu_link 10"/>
+    <node name="tf_publisher_gps_ouster" pkg="tf" type="static_transform_publisher" args="0.0 0.0 0.1 0.0 0.0 0.0 mount gps 10"/>
        
     <!-- Start RVIZ for vehicle visualization -->
     <arg name="rviz_config_file" default="$(find mapping_dataset_styria)/config/mapping_plattform.rviz"/>
