@@ -20,8 +20,9 @@ Bagfiles are available for download:
 Graz Inner City (walking):
 
 https://artirobots.sharepoint.com/:u:/g/EW7NEasfPFNNqX6kgPSrSJ4B8ifLob0q7ta24_YgT0TgIA?e=ZVh2ry
+
 Planned route: 
-![Alt text](docs/gpx_design_inner_city.jpg.jpg?raw=true "Planned Route Inner City")
+![Planned Route Inner City](https://github.com/ARTI-Robots/mapping_dataset_styria/blob/main/docs/gpx_design_inner_city.jpg?raw=true "Planned Route Inner City")
 
 Graz Schlossberg (walking):
 
