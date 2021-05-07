@@ -41,6 +41,14 @@ Planned route:
 
 Cooming soon!
 
+University Campus (Graz University of Technology / Virtual Vehicle Research GmbH)
+
+university_campus_2021-01-25-15-59-55_0.zip
+https://v2c2.sharepoint.com/:u:/s/msteams_project-team_a6232st/EYY8Z-SuraJJntc1KN6JoqAB4kFQvc0VKSQBq-wZqi6lUQ?e=Vbm6c1
+
+university_campus_2021-01-25-16-14-56_1.zip
+https://v2c2.sharepoint.com/:u:/s/msteams_project-team_a6232st/EbW-cuGCy15Bnm5G7mHsi9EBrBWb0B9A6TziWNnmJmYb5w?e=DOkFAp
+
 
 ## Installation
 
