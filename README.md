@@ -15,10 +15,14 @@ Data captured:
 - IMU XSense MTI-630
 - GPS Ublox_f9p
 
-Bagfiles are available for download: 
+Bagfiles are available for download below. 
 
 #### Graz Inner City (walking):
 
+Duration:    29:07s (1747s)
+Size:        27.0 GB
+
+inner_city.zip
 https://artirobots.sharepoint.com/:u:/g/EW7NEasfPFNNqX6kgPSrSJ4B8ifLob0q7ta24_YgT0TgIA?e=ZVh2ry
 
 Planned route: 
@@ -27,19 +31,25 @@ Planned route:
 
 #### Graz Schlossberg (walking):
 
+Duration:    32:57s (1977s)
+Size:        30.5 GB
+
+schlossberg.zip
 https://artirobots.sharepoint.com/:u:/g/EcF9BHIY421Kqhf3DT4BxrkBhQt_U97iKyOeN4o3fx0hYA?e=E0iIqG
 
 #### Graz Stadtpark (walking):
 
-Cooming soon!
+Duration:    51:50s (3110s)
+Size:        48.0 GB
+
+park.zip
+https://artirobots.sharepoint.com/:u:/g/EdIVjOiqYhtMgHvKGAZlkRgBDvNG04Al-CjxZWe8sQg4yg?e=A96ck7
 
 Planned route: 
 
 ![Planned Route Stadtpark](https://github.com/ARTI-Robots/mapping_dataset_styria/blob/main/docs/gpx_design_park.jpg?raw=true "Planned Route Stadtpark")
 
 #### Vehicle Recordings
-
-Cooming soon!
 
 University Campus (Graz University of Technology / Virtual Vehicle Research GmbH)
 
