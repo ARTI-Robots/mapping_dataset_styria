@@ -1,11 +1,11 @@
-# mapping_dataset_styria
+# Mapping Dataset Styria
 Open mapping dataset of styria in Austria
 
 
 
 ## Requirements
 
-Tested on Ubuntu 18.04, ROS Melodic
+Tested on Ubuntu 18.04/20.04 ROS Melodic/Noetic 
 
 
 ## Datafiles
@@ -49,30 +49,54 @@ Planned route:
 
 ![Planned Route Stadtpark](https://github.com/ARTI-Robots/mapping_dataset_styria/blob/main/docs/gpx_design_park.jpg?raw=true "Planned Route Stadtpark")
 
-#### Vehicle Recordings
+## Vehicle Recordings by Virtual Vehicle Research
 
-University Campus (Graz University of Technology / Virtual Vehicle Research GmbH)
+The demonstrator from Virtual Vehicle Research is equipped with differant type of sensors. For the mapping dataset sensors in the table below are used. To reduce the amout of data only the Lidar on the top of the vehicle was recorded all the time. Some recordings include as well the front/left and right placed Lidars. 
+To have a ground truth reference for some recordings a high-precision RTK-GPS from NovAtel was used for some recordings.
 
-university_campus_2021-01-25-15-59-55_0.zip  
-https://v2c2.sharepoint.com/:u:/s/msteams_project-team_a6232st/EYY8Z-SuraJJntc1KN6JoqAB4kFQvc0VKSQBq-wZqi6lUQ?e=Vbm6c1
+| Type | Sensor | Topic| Frequency |  
+| ------ | ------ | ------ | ------ |
+| Lidar | 1x Ouster OS0-128 | /lidar_top/points | 10Hz | 
+| IMU | XSens MTi-630 | /sensing/imu/imu_data | >=200Hz  | 
+| GPS | u-blox F9P | /sensing/ublox_f9p/fix  /sensing/ublox_f9p/speed | 5Hz | 
+| Lidar (optional) | 3x Ouster OS2-64 | /lidar_front/points /lidar_middle_left/points /lidar_middle_right/points | 10Hz | 
+| GPS (optional) | NovAtel ProPak6 | /sensing/novatel/fix | 100Hz |
 
-university_campus_2021-01-25-16-14-56_1.zip  
-https://v2c2.sharepoint.com/:u:/s/msteams_project-team_a6232st/EbW-cuGCy15Bnm5G7mHsi9EBrBWb0B9A6TziWNnmJmYb5w?e=DOkFAp
 
 
-University Campus -> Murpark
 
-campus_murpark_2021-03-16-16-27-02_0.zip  
-https://v2c2.sharepoint.com/:u:/s/msteams_project-team_a6232st/Ebgl20XkaaZKplzmqWScY_UBDZJnIgRvkponp9HctTYUyQ?e=iXBdce
+![alt text](https://github.com/ARTI-Robots/mapping_dataset_styria/blob/main/docs/vehicle_sensor_positions.png?raw=true)
 
-campus_murpark_2021-03-16-16-30-00_1.zip  
-https://v2c2.sharepoint.com/:u:/s/msteams_project-team_a6232st/EYHCdKCGcaVBvtzBFxo3-_sB9gL9jT6t8c8XAG_oWWyi8A?e=OM9Z4D
 
-campus_murpark_2021-03-16-16-33-07_2.zip  
-https://v2c2.sharepoint.com/:u:/s/msteams_project-team_a6232st/EdU6pX5b5GVBqsSXjwLPak0BnDKz9ik2qnjt-x4X2RVQRw?e=SJfL74
+### Graz University of Technology
 
-campus_murpark_2021-03-16-16-36-13_3.zip  
-https://v2c2.sharepoint.com/:u:/s/msteams_project-team_a6232st/ESX4gSXBx2hOmrszrDWmQQkB2eD3ajASiv_GofXFpJxdjw?e=ycoivn
+**Duration:**    21:02s (1232s)  
+**Size:**        29.5 GB  
+
+
+
+![University Campus](https://github.com/ARTI-Robots/mapping_dataset_styria/blob/main/docs/1_university_campus.jpg?raw=true "University Campus")
+
+[university_campus_2021-01-25-15-59-55_0.zip ](https://v2c2.sharepoint.com/:u:/s/msteams_project-team_a6232st/EYY8Z-SuraJJntc1KN6JoqAB4kFQvc0VKSQBq-wZqi6lUQ?e=Vbm6c1) 
+
+[university_campus_2021-01-25-16-14-56_1.zip](https://v2c2.sharepoint.com/:u:/s/msteams_project-team_a6232st/EbW-cuGCy15Bnm5G7mHsi9EBrBWb0B9A6TziWNnmJmYb5w?e=DOkFAp)  
+
+
+### Graz University of Technology -> Murpark:
+
+**Duration:**    10:06s (606s)  
+**Size:**        00.0 GB  
+
+![Planned Route Inner City](https://github.com/ARTI-Robots/mapping_dataset_styria/blob/main/docs/gpx_design_inner_city.jpg?raw=true "Planned Route Inner City")
+
+[campus_murpark_2021-03-16-16-27-02_0.zip](https://v2c2.sharepoint.com/:u:/s/msteams_project-team_a6232st/Ebgl20XkaaZKplzmqWScY_UBDZJnIgRvkponp9HctTYUyQ?e=iXBdce)  
+
+[campus_murpark_2021-03-16-16-30-00_1.zip ](https://v2c2.sharepoint.com/:u:/s/msteams_project-team_a6232st/EYHCdKCGcaVBvtzBFxo3-_sB9gL9jT6t8c8XAG_oWWyi8A?e=OM9Z4D) 
+
+[campus_murpark_2021-03-16-16-33-07_2.zip](https://v2c2.sharepoint.com/:u:/s/msteams_project-team_a6232st/EdU6pX5b5GVBqsSXjwLPak0BnDKz9ik2qnjt-x4X2RVQRw?e=SJfL74)  
+
+[campus_murpark_2021-03-16-16-36-13_3.zip](https://v2c2.sharepoint.com/:u:/s/msteams_project-team_a6232st/ESX4gSXBx2hOmrszrDWmQQkB2eD3ajASiv_GofXFpJxdjw?e=ycoivn)  
+
 
 
 
@@ -83,7 +107,7 @@ cd ~/mapping_ws/src
 git clone https://github.com/ARTI-Robots/mapping_dataset_styria.git
 git clone https://github.com/virtual-vehicle-research/ouster_example.git
 cd ..
-catkin build
+catkin_make
 ```
 
 
