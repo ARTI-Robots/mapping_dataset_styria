@@ -86,9 +86,17 @@ https://v2c2.sharepoint.com/:u:/s/msteams_project-team_a6232st/EbW-cuGCy15Bnm5G7
 **Duration:**    29:13s (1753s)  
 **Size:**        49.3 GB  
 
-![University Campus](https://github.com/ARTI-Robots/mapping_dataset_styria/blob/main/docs/6_campus_city_center_campus.jpg?raw=true "University Campus")
+![Graz Inner City](https://github.com/ARTI-Robots/mapping_dataset_styria/blob/main/docs/6_campus_city_center_campus.jpg?raw=true "Graz Inner City")
 
-Uploading in progress!
+campus_city_center_campus_2021-01-22-04-29-34_0.zip  
+https://v2c2.sharepoint.com/:u:/s/msteams_project-team_a6232st/EfM4Cnom_2xDtMWHsy7JlsEBn5_cVf3LAHaevfGGcMoBbQ?e=Jj8tEa  
+campus_city_center_campus_2021-01-22-04-39-06_1.zip  
+https://v2c2.sharepoint.com/:u:/s/msteams_project-team_a6232st/EUK2b3I1Io5DpWmhkEN393ABMzT8qTSVxz-b59tdYBcSlQ?e=htEwZK  
+campus_city_center_campus_2021-01-22-04-48-33_2.zip  
+https://v2c2.sharepoint.com/:u:/s/msteams_project-team_a6232st/EaDhvYbyPqRHokSmmqpn5KMB4CD43_V4AJuSMqnM4aVU2A?e=duwbh2  
+campus_city_center_campus_2021-01-22-04-57-55_3.zip  
+https://v2c2.sharepoint.com/:u:/s/msteams_project-team_a6232st/EUpGTkRbiDpMvq6P50-vtKABbXR24OFvFstzwSINCC2HuA?e=7qM1Z4  
+
 
 ### Urban Environment 1 (Graz University of Technology -> Murpark):
 
