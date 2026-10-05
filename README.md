@@ -24,7 +24,7 @@ Duration:    29:07s (1747s)
 Size:        27.0 GB  
 
 inner_city.zip  
-https://artirobots.sharepoint.com/:u:/g/EW7NEasfPFNNqX6kgPSrSJ4B8ifLob0q7ta24_YgT0TgIA?e=ZVh2ry
+https://artirobots.sharepoint.com/:u:/g/IQBuzRGrHzxTTal-pID0q0ieAfIny6G9Ku7WtuP2IE9E4CA?e=Tv92tl
 
 Planned route: 
 
@@ -36,7 +36,7 @@ Duration:    32:57s (1977s)
 Size:        30.5 GB  
 
 schlossberg.zip  
-https://artirobots.sharepoint.com/:u:/g/EcF9BHIY421Kqhf3DT4BxrkBhQt_U97iKyOeN4o3fx0hYA?e=E0iIqG
+https://artirobots.sharepoint.com/:u:/g/IQDBfQRyGONtSqoX9w0-Aca5AYULf1Pe4isjnjeKN38dIWA?e=jEsE8e
 
 #### Graz Stadtpark (walking):
 
@@ -44,7 +44,7 @@ Duration:    51:50s (3110s)
 Size:        48.0 GB  
 
 park.zip  
-https://artirobots.sharepoint.com/:u:/g/EdIVjOiqYhtMgHvKGAZlkRgBDvNG04Al-CjxZWe8sQg4yg?e=A96ck7
+https://artirobots.sharepoint.com/:u:/g/IQDSFYzoqmIbTIB7yhgGZZEYAQ7zRtOAJfgo8WVnvLEIOMo?e=eP0LGO
 
 Planned route: 
 
